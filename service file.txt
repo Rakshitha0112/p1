@@ -1,0 +1,13 @@
+service file 
+apiVersion: v1
+kind: Service
+metadata:
+  name: s1
+spec:
+  type: ClusterIP
+  ports:
+   - port: 80
+     targetPort: 80
+  selector:
+    app: web
+
